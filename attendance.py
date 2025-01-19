@@ -69,7 +69,7 @@ def err_screen():
         text="Enrollment & Name required!!!",
         fg="yellow",
         bg="#1c1c1c",  # Dark background for the error window
-        font=("Helvetica", 16, "bold"),
+        font=("Verdana", 16, "bold"),
     ).pack()
     tk.Button(
         sc1,
@@ -80,7 +80,7 @@ def err_screen():
         width=9,
         height=1,
         activebackground="red",
-        font=("Helvetica", 16, "bold"),
+        font=("Verdana", 16, "bold"),
     ).place(x=110, y=50)
 
 def testVal(inStr, acttyp):
@@ -93,14 +93,14 @@ def testVal(inStr, acttyp):
 logo = Image.open("UI_Image/0001.png")
 logo = logo.resize((50, 47), Image.LANCZOS)
 logo1 = ImageTk.PhotoImage(logo)
-titl = tk.Label(window, bg="#1c1c1c", relief=RIDGE, bd=10, font=("Helvetica", 30, "bold"))
+titl = tk.Label(window, bg="#1c1c1c", relief=RIDGE, bd=10, font=("Verdana", 30, "bold"))
 titl.pack(fill=X)
 l1 = tk.Label(window, image=logo1, bg="#1c1c1c",)
 l1.place(x=470, y=10)
 
 
 titl = tk.Label(
-    window, text="CLASS VISION", bg="#1c1c1c", fg="yellow", font=("Helvetica", 27, "bold"),
+    window, text="CLASS VISION", bg="#1c1c1c", fg="yellow", font=("Verdana", 27, "bold"),
 )
 titl.place(x=525, y=12)
 
@@ -110,7 +110,7 @@ a = tk.Label(
     bg="#1c1c1c",  # Dark background for the main text
     fg="yellow",  # Bright yellow text color
     bd=10,
-    font=("Helvetica", 35, "bold"),
+    font=("Verdana", 35, "bold"),
 )
 a.pack()
 
@@ -140,11 +140,11 @@ def TakeImageUI():
     ImageUI.geometry("780x480")
     ImageUI.configure(background="#1c1c1c")  # Dark background for the image window
     ImageUI.resizable(0, 0)
-    titl = tk.Label(ImageUI, bg="#1c1c1c", relief=RIDGE, bd=10, font=("Helvetica", 30, "bold"))
+    titl = tk.Label(ImageUI, bg="#1c1c1c", relief=RIDGE, bd=10, font=("Verdana", 30, "bold"))
     titl.pack(fill=X)
     # image and title
     titl = tk.Label(
-        ImageUI, text="Register Your Face", bg="#1c1c1c", fg="green", font=("Helvetica", 30, "bold"),
+        ImageUI, text="Register Your Face", bg="#1c1c1c", fg="green", font=("Verdana", 30, "bold"),
     )
     titl.place(x=270, y=12)
 
@@ -155,7 +155,7 @@ def TakeImageUI():
         bg="#1c1c1c",  # Dark background for the details label
         fg="yellow",  # Bright yellow text color
         bd=10,
-        font=("Helvetica", 24, "bold"),
+        font=("Verdana", 24, "bold"),
     )
     a.place(x=280, y=75)
 
@@ -169,7 +169,7 @@ def TakeImageUI():
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("Helvetica", 14),
+        font=("Verdana", 14),
     )
     lbl1.place(x=120, y=130)
     txt1 = tk.Entry(
@@ -180,7 +180,7 @@ def TakeImageUI():
         bg="#333333",  # Dark input background
         fg="yellow",  # Bright text color for input
         relief=RIDGE,
-        font=("Helvetica", 18, "bold"),
+        font=("Verdana", 18, "bold"),
     )
     txt1.place(x=250, y=130)
     txt1["validatecommand"] = (txt1.register(testVal), "%P", "%d")
@@ -195,7 +195,7 @@ def TakeImageUI():
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("Helvetica", 14),
+        font=("Verdana", 14),
     )
     lbl2.place(x=120, y=200)
     txt2 = tk.Entry(
@@ -205,7 +205,7 @@ def TakeImageUI():
         bg="#333333",  # Dark input background
         fg="yellow",  # Bright text color for input
         relief=RIDGE,
-        font=("Helvetica", 18, "bold"),
+        font=("Verdana", 18, "bold"),
     )
     txt2.place(x=250, y=200)
 
@@ -218,7 +218,7 @@ def TakeImageUI():
         fg="yellow",
         bd=5,
         relief=RIDGE,
-        font=("Helvetica", 14),
+        font=("Verdana", 14),
     )
     lbl3.place(x=120, y=270)
 
@@ -231,7 +231,7 @@ def TakeImageUI():
         bg="#333333",  # Dark background for messages
         fg="yellow",  # Bright text color for messages
         relief=RIDGE,
-        font=("Helvetica", 14, "bold"),
+        font=("Verdana", 14, "bold"),
     )
     message.place(x=250, y=270)
 
@@ -257,7 +257,7 @@ def TakeImageUI():
         text="Take Image",
         command=take_image,
         bd=10,
-        font=("Helvetica", 18, "bold"),
+        font=("Verdana", 18, "bold"),
         bg="#333333",  # Dark background for the button
         fg="yellow",  # Bright text color for the button
         height=2,
@@ -281,7 +281,7 @@ def TakeImageUI():
         text="Train Image",
         command=train_image,
         bd=10,
-        font=("Helvetica", 18, "bold"),
+        font=("Verdana", 18, "bold"),
         bg="#333333",  # Dark background for the button
         fg="yellow",  # Bright text color for the button
         height=2,
@@ -296,7 +296,7 @@ r = tk.Button(
     text="Register a new student",
     command=TakeImageUI,
     bd=10,
-    font=("Helvetica", 16),
+    font=("Verdana", 16),
     bg="black",
     fg="yellow",
     height=2,
@@ -314,7 +314,7 @@ r = tk.Button(
     text="Take Attendance",
     command=automatic_attedance,
     bd=10,
-    font=("Helvetica", 16),
+    font=("Verdana", 16),
     bg="black",
     fg="yellow",
     height=2,
@@ -332,7 +332,7 @@ r = tk.Button(
     text="View Attendance",
     command=view_attendance,
     bd=10,
-    font=("Helvetica", 16),
+    font=("Verdana", 16),
     bg="black",
     fg="yellow",
     height=2,
@@ -344,7 +344,7 @@ r = tk.Button(
     text="EXIT",
     bd=10,
     command=quit,
-    font=("Helvetica", 16),
+    font=("Verdana", 16),
     bg="black",
     fg="yellow",
     height=2,
